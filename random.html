@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form HTML</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="username">username:</label>
+            <input type="text" id="username">
+            <br>
+
+            <label for="password">password:</label>
+            <input type="password" id="password">
+            <br>
+
+            <input type="radio" name="jenis kelamin"><label for="pria">pria</label>
+            <input type="radio" name="jenis kelamin"><label for="wanita">wanita</label>
+            <br>
+
+            <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+            <input type="checkbox" id="menari"><label for="menari">menari</label>
+            <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+            <br>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            
+            <select>
+                <option>Bandung</option>
+                <option>Jakarta</option>
+                <option>Solo</option>
+            </select>
+            <br>
+            
+            <button type="submit">KIRIM!</button>
+            <button type="reset">ULANGI!</button>
+        </form>
+            <br><br><br><br><br>
+       
+            <!--masukin ke tabel-->
+            <table border="1" celspacing="0" cellpadding="0">
+                <thead>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="username">username:</label></td>
+                        <td align="center"><input type="text" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password" style="width: 10px;">password:</label></td>
+                        <td align="center"><input type="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="radio" name="jenis kelamin"><label for="pria">pria</label>
+                            <input type="radio" name="jenis kelamin"><label for="wanita">wanita</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="checkbox" id="gelut"><label for="gelut">gelut</label>
+                            <input type="checkbox" id="menari"><label for="menari">menari</label>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>Region</td>
+                        <td align="center">            
+                            <select>
+                            <option>Bandung</option>
+                            <option>Jakarta</option>
+                            <option>Solo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Textarea</td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">KIRIM!</button>
+                            <button type="reset">ULANGI!</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </body>
+</html>

@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  #slider{
+    overflow: hidden;
+  
+  }
+  #slider figure {
+   position: relative;
+   width: 500%;
+   margin: 0;
+   left: 0;
+   animation: 20s slider linear infinite;
+  }
+  #slider figure img{
+    width: 20%;
+    float: left;
+    filter: brightness(60%);
+  }
+  @keyframes slider{
+    0%{
+       left: 0%;
+    }
+    20%{
+       left: 0%;
+    }
+    25%{
+       left: -100%;
+    }
+    45%{
+       left: -100%;
+    }
+    50%{
+       left: -200%;
+    }
+    70%{
+       left: -200%;
+    }
+    75%{
+       left: -300%;
+    }
+    95%{
+       left: -300%;
+    }
+    100%{
+       left: -400%;
+    }
+  }
+  
+  .navbar{
+    height: 12%;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex; 
+    flex-flow: row;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: fixed;
+    font-family: roboto;
+  }
+  .logo {
+    position: fixed; 
+    width: 70px;
+    margin-left: 50px;
+    display: inline-block;
+    margin-bottom: 60px;
+  }
+  .menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  .search-box {
+    position: fixed; 
+    transform: translate(0%, 100%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 0;
+    margin-left: 200px;
+    display: inline-block;
+    margin-bottom: 120px;
+   }
+  .search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+   }
+   
+   .search-box:hover > .search-btn {
+    background: white;
+    color: black;
+   }
+   
+   .search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+    
+   }
+   
+   .search-btn > i {
+    font-size: 30px;
+   }
+   
+   .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+   }
+   
+   .menu {
+       position: fixed; top: 25px; right: 50px;
+   }
+   
+   .dropbtn {
+   background-color: #2f3640;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+  }
+  
+  .dropdown {
+   position: relative;
+   display: inline-block;
+  }
+  
+  .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+  
+  button a, a:visited, a:hover, a:active {
+   color: white;
+   text-decoration: none;
+  }
+  
+  .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(70, 124, 243)}
+  
+  .dropdown:hover .dropdown-content {
+   display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+   background-color: rgb(70, 124, 243);
+  }
+  
+  button {
+   border: 0;
+  }
+  .title-text{
+     width: 100%;
+     position: relative;
+     margin-top: -40%;
+  }
+  .title-text h1{
+     text-align: center;
+     color: white;
+     font-size: 10vw;
+     font-family: roboto;
+  }
+  @font-face {
+     font-family: roboto;
+     src: url('fonts/Roboto-Regular.ttf');
+  }
+  .oneplusseries{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/oneplusseriesgif1.1.jpg);
+    height: 500px;
+    margin-top: 425px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+  }
+  .oneplusseries:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/oneplusseriesgif1.2.gif);
+    transform: scale(1.01);
+  }
+  .oneplusseries h5{
+    font-size: 75px;
+    flex-basis: 50%;
+    position: relative;
+    margin-top: -400px;
+    margin-left: 500px;
+    font-family: roboto;
+  }
+  .oneplusseries h6{
+    font-size: 20px;
+    flex-basis: 50%;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 50%;
+    font-family: roboto;
+  }
+  .oneplusnord{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/oneplusnordgif1.1.jpg);
+    height: 500px;
+    margin-top: 2.5px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+  }
+  .oneplusnord:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/oneplusnordgif1.2.gif);
+    transform: scale(1.01);
+  }
+  .oneplusnord h5{
+    font-size: 75px;
+    flex-basis: 50%;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-family: roboto;
+  }
+  .oneplusnord h6{
+    font-size: 20px;
+    flex-basis: 50%;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 50%;
+    font-family: roboto;
+  }
+  
+  .card{
+    width: 400px;
+    height: 430px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    margin-top: 40px;
+  }
+  .card:hover{
+    transform: translatey(-10px)
+  }
+  .card1{
+   background-image: url(images/onepluscard.jpg)
+  }
+  .card1:hover{
+    background-image: url(images/onepluscard.gif);
+  }
+  .p{
+    flex-basis: 50%;
+  }
+  .card2{
+    background-image: url(images/oneplusnordcard.jpg);
+    float: right;
+  }
+  .card2:hover{
+    background-image: url(images/oneplusnordcard.gif)
+  }
+ 
